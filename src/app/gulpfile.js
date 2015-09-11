@@ -45,7 +45,7 @@ gulp.task('application-run', ['application-js', 'application-build'], function (
 
 // Watch js files for changes and trigger a new build.
 gulp.task('watch', function() {
-	gulp.watch(['components/**/*.js'], ['application-run']);
+	gulp.watch(['app.js'], ['application-run']);
 });
 
 gulp.task('default', ['application-run', 'watch']);
