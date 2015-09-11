@@ -36,6 +36,11 @@ main.on('show', function() {
 				}]
 			});
 
+			// When the list is shown, remove the main screen from the stack.
+			menu.on('show', function() {
+				main.hide();
+			});
+
 			// Show the menu.
 			menu.show();
 		},
